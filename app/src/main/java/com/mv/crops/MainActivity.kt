@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(ContentValues.TAG, "signInWithEmailAndPassword:success")
                                 Toast.makeText(
-                                    baseContext, "Bienvenido!!",
+                                    baseContext, "Iniciando sesión",
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 // Back to main page
