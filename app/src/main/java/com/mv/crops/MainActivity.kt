@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
 
-        Thread.sleep(3000)
+        Thread.sleep(10000)
         setTheme(R.style.Theme_Crops)
 
         super.onCreate(savedInstanceState);
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 // Back to main page
-                                val intent = Intent(this, MainActivity::class.java)
+                                val intent = Intent(this, HomeActivity::class.java)
                                 startActivity(intent)
                             } else {
                                 // If sign in fails, display a message to the user.
