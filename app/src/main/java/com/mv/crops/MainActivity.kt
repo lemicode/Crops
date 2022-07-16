@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth;
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
+        Thread.sleep(3000)
+        setTheme(R.style.Theme_Crops)
+
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar()?.hide();
@@ -60,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 // Back to main page
-                                val intent = Intent(this, LoadActivity::class.java)
+                                val intent = Intent(this, MainActivity::class.java)
                                 startActivity(intent)
                             } else {
                                 // If sign in fails, display a message to the user.
