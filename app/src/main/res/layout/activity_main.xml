@@ -52,9 +52,10 @@
                 android:id="@+id/login_txt_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/inputs_redondos"
                 android:ems="10"
                 android:hint="Usuario"
+                android:paddingLeft="20dp"
                 android:inputType="textPersonName"
                 android:textColorHint="#191919" />
 
@@ -67,8 +68,9 @@
                 android:id="@+id/login_txt_contrasena"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/inputs_redondos"
                 android:ems="10"
+                android:paddingLeft="20dp"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
                 android:textColorHint="#000000" />
