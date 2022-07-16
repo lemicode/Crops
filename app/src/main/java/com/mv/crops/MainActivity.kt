@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        Thread.sleep(3000)
+
+        Thread.sleep(5000)
         setTheme(R.style.Theme_Crops)
 
         super.onCreate(savedInstanceState);

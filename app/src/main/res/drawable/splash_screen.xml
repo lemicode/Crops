@@ -4,7 +4,7 @@
 
     <item android:drawable="@color/black"/>
     <item>
-        <bitmap android:src="@drawable/loading"
+        <bitmap android:src="@drawable/ic_fondo_login_cultiva"
             android:gravity="center"/>
     </item>
 
