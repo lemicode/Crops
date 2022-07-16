@@ -19,11 +19,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth;
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
-        Thread.sleep(10000)
-        setTheme(R.style.Theme_Crops)
-
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar()?.hide();
@@ -61,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(ContentValues.TAG, "signInWithEmailAndPassword:success")
                                 Toast.makeText(
-                                    baseContext, "Bienvenido!!",
+                                    baseContext, "Iniciando sesión",
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 // Back to main page
