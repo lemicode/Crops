@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crops">
         <activity
-            android:name=".LoadActivity"
+            android:name=".HomeActivity"
+            android:theme="@style/SplashScreen"/>
+        <activity
+            android:name=".HoursWorked"
+            android:exported="false" />
+        <activity
+            android:name=".NewCrop"
             android:exported="false" />
         <activity
             android:name=".NewUserActivity"

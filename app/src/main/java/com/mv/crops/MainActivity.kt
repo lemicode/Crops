@@ -56,11 +56,11 @@ class MainActivity : AppCompatActivity() {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(ContentValues.TAG, "signInWithEmailAndPassword:success")
                                 Toast.makeText(
-                                    baseContext, "Bienvenido!!",
+                                    baseContext, "Iniciando sesión",
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 // Back to main page
-                                val intent = Intent(this, LoadActivity::class.java)
+                                val intent = Intent(this, HomeActivity::class.java)
                                 startActivity(intent)
                             } else {
                                 // If sign in fails, display a message to the user.

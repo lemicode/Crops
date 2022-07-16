@@ -4,119 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_registro_fondo"
-    tools:context=".NewUserActivity">
+    tools:context=".NewCrop">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="356dp"
-        android:layout_height="829dp"
+        android:layout_width="389dp"
+        android:layout_height="715dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:background="#FFFFFF" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/new_user_btn_regresar"
-                android:layout_width="43dp"
-                android:layout_height="25dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_volver" />
-
-            <Space
-                android:layout_width="262dp"
-                android:layout_height="35dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-        </LinearLayout>
-
-        <Space
-            android:id="@+id/space"
-            android:layout_width="match_parent"
-            android:layout_height="117dp"
-            android:background="#FFFFFF" />
-
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/new_crop_text_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registro"
+            android:text="Agregar Cultivo"
             android:textColor="#000000"
             android:textSize="34sp"
             android:textStyle="bold" />
-
         <Space
             android:layout_width="match_parent"
-            android:layout_height="26dp"
+            android:layout_height="31dp"
             android:background="#FFFFFF" />
 
         <EditText
-            android:id="@+id/new_user_txt_email"
+            android:id="@+id/new_crop_txt_ubicacion"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/inputs_redondos"
             android:ems="10"
-            android:hint="Ingrese su correo"
+            android:hint="Ubicación"
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
-            android:textColorHint="#191919" />
-
+            android:textColorHint="#191919"
+            app:cardCornerRadius="10dp" />
         <Space
             android:layout_width="match_parent"
-            android:layout_height="26dp"
+            android:layout_height="31dp"
             android:background="#FFFFFF" />
 
         <EditText
-            android:id="@+id/new_user_txt_password"
+            android:id="@+id/new_crop_txt_tipo_cultivo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/inputs_redondos"
             android:ems="10"
-            android:hint="Ingrese su contraseña"
+            android:hint="Tipo de cultivo"
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
-            android:textColorHint="#191919" />
-
+            android:textColorHint="#191919"
+            app:cardCornerRadius="10dp" />
         <Space
             android:layout_width="match_parent"
-            android:layout_height="26dp"
+            android:layout_height="31dp"
             android:background="#FFFFFF" />
 
         <EditText
-            android:id="@+id/new_user_txt_password2"
+            android:id="@+id/new_crop_txt_nombre_cultivo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/inputs_redondos"
             android:ems="10"
-            android:hint="Confirme su contraseña"
+            android:hint="Nombre del cultivo"
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
-            android:textColorHint="#191919" />
+            android:textColorHint="#191919"
+            app:cardCornerRadius="10dp" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="26dp"
+            android:layout_height="31dp"
+            android:background="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/new_crop_txt_area_cultivo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/inputs_redondos"
+            android:ems="10"
+            android:hint="Área del cultivo"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColorHint="#191919"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/new_crop_txt_fecha_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/inputs_redondos"
+            android:ems="10"
+            android:hint="Fecha de inicio"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColorHint="#191919"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
             android:background="#FFFFFF" />
 
         <Button
-            android:id="@+id/new_user_btn_iniciar_sesion"
+            android:id="@+id/new_crop_btn_anadir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondos"
-            android:text="Finalizar"
+            android:background="@drawable/botones_redondos_2"
+            android:text="Añadir"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:textSize="18sp"
             app:cardCornerRadius="10dp" />
 
