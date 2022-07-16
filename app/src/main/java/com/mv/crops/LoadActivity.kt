@@ -14,7 +14,6 @@ class LoadActivity : AppCompatActivity() {
         val intent = Intent(this, NewUserActivity::class.java)
         startActivity(intent)
 
-
     }
 
 }
