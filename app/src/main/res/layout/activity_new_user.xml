@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUserActivity">
+
+    <LinearLayout
+        android:layout_width="389dp"
+        android:layout_height="710dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/new_user_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/inputs_redondos"
+            android:ems="10"
+            android:hint="Ingrese su correo"
+            android:paddingLeft="20dp"
+            android:inputType="textPersonName"
+            android:textColorHint="#191919" />
+        <EditText
+            android:id="@+id/new_user_txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/inputs_redondos"
+            android:ems="10"
+            android:hint="Ingrese su contraseña"
+            android:paddingLeft="20dp"
+            android:inputType="textPersonName"
+            android:textColorHint="#191919" />
+        <EditText
+            android:id="@+id/new_user_txt_password2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/inputs_redondos"
+            android:ems="10"
+            android:hint="Confirme su contraseña"
+            android:paddingLeft="20dp"
+            android:inputType="textPersonName"
+            android:textColorHint="#191919" />
+        <Button
+            android:id="@+id/new_user_btn_iniciar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/new_user_btn_regresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
