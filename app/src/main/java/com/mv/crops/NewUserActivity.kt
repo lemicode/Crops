@@ -5,8 +5,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Window
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -18,6 +20,8 @@ class NewUserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getSupportActionBar()?.hide();
         setContentView(R.layout.activity_new_user)
 
         val txt_correo = findViewById<EditText>(R.id.new_user_txt_email)
@@ -26,7 +30,7 @@ class NewUserActivity : AppCompatActivity() {
         val boton_registrar = findViewById<Button>(R.id.new_user_btn_iniciar_sesion)
 
         //boton regresa al menu principal
-        val boton_regresar=findViewById<Button>(R.id.new_user_btn_regresar)
+        val boton_regresar=findViewById<ImageView>(R.id.new_user_btn_regresar)
         boton_regresar.setOnClickListener{
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
