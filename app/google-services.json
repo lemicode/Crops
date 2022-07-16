@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644530073841",
+    "project_id": "cultivas-de266",
+    "storage_bucket": "cultivas-de266.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644530073841:android:b414b246d6bbd0980c7950",
+        "android_client_info": {
+          "package_name": "com.mv.crops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644530073841-ce92gk15te2a1iooi24bbgu6eki53shv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr2icJ2zXY4FWithKHRJOX0LT9xcyq1Hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644530073841-ce92gk15te2a1iooi24bbgu6eki53shv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
