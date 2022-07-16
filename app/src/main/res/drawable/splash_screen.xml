@@ -2,9 +2,9 @@
 <layer-list android:opacity="opaque"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:drawable="@color/black"/>
+    <item android:drawable="@color/purple_700"/>
     <item>
-        <bitmap android:src="@drawable/ic_fondo_login_cultiva"
+        <bitmap android:src="@drawable/loading"
             android:gravity="center"/>
     </item>
 
