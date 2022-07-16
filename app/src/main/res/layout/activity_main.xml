@@ -23,7 +23,9 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="367dp"
+            android:src="@drawable/ic_fondo_login_cultiva"
             tools:srcCompat="@drawable/ic_fondo_login_cultiva" />
+
 
         <Space
             android:layout_width="match_parent"
