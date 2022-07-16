@@ -6,7 +6,7 @@ import android.os.Bundle
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        Thread.sleep(3000)
+        Thread.sleep(10000)
         setTheme(R.style.Theme_Crops)
 
         super.onCreate(savedInstanceState)

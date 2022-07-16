@@ -3,9 +3,5 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:drawable="@color/purple_700"/>
-    <item>
-        <bitmap android:src="@drawable/loading"
-            android:gravity="center"/>
-    </item>
 
 </layer-list>

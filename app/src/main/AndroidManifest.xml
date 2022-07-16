@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crops">
         <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreen"/>
+        <activity
             android:name=".HoursWorked"
             android:exported="false" />
         <activity
@@ -18,10 +22,6 @@
         <activity
             android:name=".NewUserActivity"
             android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:theme="@style/SplashScreen"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
