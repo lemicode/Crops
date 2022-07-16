@@ -23,9 +23,16 @@ class MainActivity : AppCompatActivity() {
         val boton_login = findViewById<Button>(R.id.login_btn_iniciar_sesion)
         val txt_correo=findViewById<EditText>(R.id.login_txt_usuario)
         val txt_contrasena=findViewById<EditText>(R.id.login_txt_contrasena)
+        val boton_registro = findViewById<Button>(R.id.login_btn_registrate)
 
 
         auth = Firebase.auth
+
+
+        boton_registro.setOnClickListener {
+            val intent = Intent(this, NewUserActivity::class.java)
+            startActivity(intent)
+        }
 
         boton_login.setOnClickListener {
             try {
