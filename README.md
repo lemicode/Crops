@@ -1,2 +1,2 @@
-# ColCultivos
+# Cultivas
 Prueba proyecto 
