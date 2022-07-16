@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crops">
         <activity
+            android:name=".LoadActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewUserActivity"
             android:exported="false" />
         <activity
