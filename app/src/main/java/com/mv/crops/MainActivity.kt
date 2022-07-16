@@ -4,6 +4,7 @@ import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Html
 import android.util.Log
 import android.view.Window
 import android.widget.Button
@@ -27,6 +28,11 @@ class MainActivity : AppCompatActivity() {
         val txt_contrasena=findViewById<EditText>(R.id.login_txt_contrasena)
         val boton_registro = findViewById<Button>(R.id.login_btn_registrate)
 
+
+        val greenString = "<font color='#03A63D'>ahora</font>"
+        val blackString = "<font color='#000000'>Registrate </font>"
+
+        boton_registro.text = Html.fromHtml( blackString + greenString )
 
         auth = Firebase.auth
 

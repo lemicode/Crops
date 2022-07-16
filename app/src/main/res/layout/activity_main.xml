@@ -29,10 +29,10 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="57dp" />
+            android:layout_height="38dp" />
 
         <LinearLayout
-            android:layout_width="376dp"
+            android:layout_width="360dp"
             android:layout_height="450dp"
             android:orientation="vertical">
 
@@ -57,9 +57,10 @@
                 android:background="@drawable/inputs_redondos"
                 android:ems="10"
                 android:hint="Usuario"
-                android:paddingLeft="20dp"
                 android:inputType="textPersonName"
-                android:textColorHint="#191919" />
+                android:paddingLeft="20dp"
+                android:textColorHint="#191919"
+                app:cardCornerRadius="10dp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -72,10 +73,11 @@
                 android:layout_height="60dp"
                 android:background="@drawable/inputs_redondos"
                 android:ems="10"
-                android:paddingLeft="20dp"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
-                android:textColorHint="#000000" />
+                android:paddingLeft="20dp"
+                android:textColorHint="#000000"
+                app:cardCornerRadius="10dp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -86,9 +88,17 @@
                 android:id="@+id/login_btn_iniciar_sesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/botones_redondos"
                 android:text="Iniciar sesión"
                 android:textAllCaps="false"
-                android:textSize="18sp" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:cardCornerRadius="10dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:background="#FFFFFF" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,13 +135,21 @@
 
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:background="#FFFFFF" />
+
             <Button
                 android:id="@+id/login_btn_registrate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/botones_redondos_2"
                 android:text="Registrate ahora"
                 android:textAllCaps="false"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:cardCornerRadius="10dp" />
+
         </LinearLayout>
 
     </LinearLayout>
