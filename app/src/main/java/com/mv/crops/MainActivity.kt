@@ -19,11 +19,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth;
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
-        Thread.sleep(3000)
-        setTheme(R.style.Theme_Crops)
-
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar()?.hide();
