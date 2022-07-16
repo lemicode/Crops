@@ -4,16 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_registro_fondo"
     tools:context=".NewUserActivity">
 
     <LinearLayout
-        android:layout_width="389dp"
-        android:layout_height="710dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="356dp"
+        android:layout_height="829dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/new_user_btn_regresar"
+                android:layout_width="43dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_volver" />
+
+            <Space
+                android:layout_width="262dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="117dp"
+            android:background="#FFFFFF" />
+
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
@@ -22,6 +55,12 @@
             android:textColor="#000000"
             android:textSize="34sp"
             android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="#FFFFFF" />
+
         <EditText
             android:id="@+id/new_user_txt_email"
             android:layout_width="match_parent"
@@ -29,9 +68,15 @@
             android:background="@drawable/inputs_redondos"
             android:ems="10"
             android:hint="Ingrese su correo"
-            android:paddingLeft="20dp"
             android:inputType="textPersonName"
+            android:paddingLeft="20dp"
             android:textColorHint="#191919" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="#FFFFFF" />
+
         <EditText
             android:id="@+id/new_user_txt_password"
             android:layout_width="match_parent"
@@ -39,9 +84,15 @@
             android:background="@drawable/inputs_redondos"
             android:ems="10"
             android:hint="Ingrese su contraseña"
-            android:paddingLeft="20dp"
             android:inputType="textPersonName"
+            android:paddingLeft="20dp"
             android:textColorHint="#191919" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="#FFFFFF" />
+
         <EditText
             android:id="@+id/new_user_txt_password2"
             android:layout_width="match_parent"
@@ -49,22 +100,25 @@
             android:background="@drawable/inputs_redondos"
             android:ems="10"
             android:hint="Confirme su contraseña"
-            android:paddingLeft="20dp"
             android:inputType="textPersonName"
+            android:paddingLeft="20dp"
             android:textColorHint="#191919" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="#FFFFFF" />
+
         <Button
             android:id="@+id/new_user_btn_iniciar_sesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
+            android:background="@drawable/botones_redondos"
+            android:text="Finalizar"
             android:textAllCaps="false"
-            android:textSize="18sp" />
-        <Button
-            android:id="@+id/new_user_btn_regresar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Volver"
-            android:textAllCaps="false"
-            android:textSize="18sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:cardCornerRadius="10dp" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
