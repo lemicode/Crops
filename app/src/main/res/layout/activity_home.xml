@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="834dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hola Alex!"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mis cultivos"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/home_card_ver_cultivos"
+                android:layout_width="wrap_content"
+                android:layout_height="151dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/ver_cultivos_imagen"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="false"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg1"
+                    android:layout_width="170dp"
+                    android:layout_height="169dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/ver_cultivos_imagen">
+
+                    <!--Add cardview contents-->
+
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="39dp"
+                        android:layout_height="83dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="112dp"
+                        android:layout_marginBottom="75dp"
+                        android:translationX="-5dp"
+                        android:translationY="10dp"
+                        tools:srcCompat="@drawable/ic_icono_card_ver_cultivo" />
+
+                    <TextView
+                        android:id="@+id/home_card_titulo_ver_cultivo"
+                        android:layout_width="131dp"
+                        android:layout_height="98dp"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="78dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="left"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="10"
+                        android:text="Ver cultivos"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:translationX="5dp"
+                        android:translationY="0dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/home_card_agregar_cultivos"
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/ver_cultivos_imagen"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="false"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg"
+                    android:layout_width="170dp"
+                    android:layout_height="169dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/agregar_cultivos_imagen">
+
+                    <!--Add cardview contents-->
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="39dp"
+                        android:layout_height="83dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="112dp"
+                        android:layout_marginBottom="75dp"
+                        android:translationX="-5dp"
+                        android:translationY="10dp"
+                        tools:srcCompat="@drawable/ic_icono_card_agregar_cultivo" />
+
+                    <TextView
+                        android:id="@+id/home_card_titulo_agregar_cultivo"
+                        android:layout_width="131dp"
+                        android:layout_height="98dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="78dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="left"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="10"
+                        android:text="Agregar cultivos"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:translationX="5dp"
+                        android:translationY="0dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/home_card_actividades"
+                android:layout_width="wrap_content"
+                android:layout_height="151dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/ver_cultivos_imagen"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="false"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg3"
+                    android:layout_width="170dp"
+                    android:layout_height="169dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/actividades_imagen">
+
+                    <!--Add cardview contents-->
+
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="34dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="112dp"
+                        android:layout_marginBottom="92dp"
+                        android:translationX="-5dp"
+                        android:translationY="40dp"
+                        tools:srcCompat="@drawable/ic_icono_card_actividades" />
+
+                    <TextView
+                        android:id="@+id/home_card_titulo_actividades"
+                        android:layout_width="139dp"
+                        android:layout_height="43dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="78dp"
+                        android:layout_marginEnd="23dp"
+                        android:layout_marginBottom="48dp"
+                        android:gravity="left"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="10"
+                        android:text="Actividades"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:translationX="0dp"
+                        android:translationY="30dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/home_card_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="151dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/ver_cultivos_imagen"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:hapticFeedbackEnabled="false"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/list_container_bg4"
+                    android:layout_width="170dp"
+                    android:layout_height="169dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/perfil_imagen">
+
+                    <!--Add cardview contents-->
+
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="21dp"
+                        android:layout_marginEnd="116dp"
+                        android:layout_marginBottom="102dp"
+                        android:translationX="-5dp"
+                        android:translationY="40dp"
+                        tools:srcCompat="@drawable/ic_icono_card_perfil" />
+
+                    <TextView
+                        android:id="@+id/home_card_titulo_perfil"
+                        android:layout_width="124dp"
+                        android:layout_height="34dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="78dp"
+                        android:layout_marginEnd="31dp"
+                        android:layout_marginBottom="57dp"
+                        android:gravity="left"
+                        android:shadowColor="#000000"
+                        android:shadowRadius="10"
+                        android:text="Perfil"
+                        android:textColor="#FFFFFF"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:translationX="5dp"
+                        android:translationY="30dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tips sobre tus cultivos"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/home_card_tips"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/ver_cultivos_imagen"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:hapticFeedbackEnabled="false"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:id="@+id/list_container_bg5"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:layout_margin="0dp"
+                android:background="@drawable/tipss_imagen_12">
+
+                <!--Add cardview contents-->
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="123dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="right"
+                    android:layout_marginStart="187dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginEnd="112dp"
+                    android:layout_marginBottom="102dp"
+                    android:translationX="90dp"
+                    android:translationY="-10dp"
+                    tools:srcCompat="@drawable/ic_icono_card_tips" />
+
+                <TextView
+                    android:id="@+id/home_card_titulo_tips"
+                    android:layout_width="131dp"
+                    android:layout_height="98dp"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="78dp"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginBottom="13dp"
+                    android:gravity="left"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="10"
+                    android:text="5 consejos que debes saber"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:translationX="5dp"
+                    android:translationY="-30dp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
