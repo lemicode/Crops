@@ -36,17 +36,13 @@ class NewCropActivity : AppCompatActivity() {
             try {
 
                 val ubicacion = txt_ubicacion.text.toString().lowercase()
-                val tipo_cultivo = txt_tipo_cultivo.text.toString().lowercase()
                 val nombre_cultivo = txt_nombre_cultivo.text.toString().lowercase()
                 val area_cultivo = txt_area_cultivo.text.toString()
                 val fecha_inicio = txt_fecha_inicio.text.toString()
 
                 db.collection("crops").document(nombre_cultivo).set{
                     hashMapOf(
-                        "ubicacion" to ubicacion,
-                        "tipo" to tipo_cultivo,
-                        "area" to area_cultivo,
-                        "fecha_inicio" to fecha_inicio
+                        "ubicacion" to 1
                     )
                 }
 
