@@ -73,15 +73,12 @@
             android:layout_height="31dp"
             android:background="#FFFFFF" />
 
-        <EditText
-            android:id="@+id/new_crop_txt_nombre_cultivo"
+        <Spinner
+            android:id="@+id/new_crop_spinner_nombre_cultivo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/inputs_redondos"
-            android:ems="10"
-            android:hint="Nombre del cultivo"
-            android:inputType="textPersonName"
-            android:paddingLeft="20dp"
+            android:spinnerMode="dropdown"
             android:textColorHint="#191919"
             app:cardCornerRadius="10dp" />
 
@@ -97,7 +94,7 @@
             android:background="@drawable/inputs_redondos"
             android:ems="10"
             android:hint="Área del cultivo"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:paddingLeft="20dp"
             android:textColorHint="#191919"
             app:cardCornerRadius="10dp" />

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Cultivas</string>
+
+    <string-array name="cultivos">
+        <item>Seleccione un cultivo</item>
+        <item>Café</item>
+        <item>Plátano</item>
+        <item>Caña</item>
+        <item>Cacao</item>
+        <item>Aguacate</item>
+        <item>Naranja</item>
+        <item>Mango</item>
+        <item>Limón</item>
+        <item>Banano</item>
+        <item>Mandarina</item>
+    </string-array>
+
 </resources>
