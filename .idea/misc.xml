@@ -3,17 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/drawable/ic_fondo_login_cultiva.xml" value="0.15" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/drawable/splash_screen.xml" value="0.12" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/drawable/splashscreen.xml" value="0.128" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_hectares_worked.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_hours_worked.xml" value="0.18478260869565216" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_irrigated_water.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_load.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_new_crop.xml" value="0.18478260869565216" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_new_user.xml" value="0.19927536231884058" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_splash_screen.xml" value="0.18704710144927536" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.177" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/ic_fondo_login_cultiva.xml" value="0.177" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/ic_launcher_background.xml" value="0.177" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/inputs_redondos.xml" value="0.177" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_home.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_hours_worked.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_new_crop.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_new_user.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_profile.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_splash_screen.xml" value="0.16354166666666667" />
       </map>
     </option>
   </component>

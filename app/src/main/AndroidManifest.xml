@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crops">
         <activity
-            android:name=".HectaresWorkedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".IrrigatedWaterActivity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
