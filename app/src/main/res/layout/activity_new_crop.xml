@@ -24,13 +24,13 @@
 
             <ImageView
                 android:id="@+id/new_crop_btn_regresar"
-                android:layout_width="7dp"
+                android:layout_width="66dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/ic_volver" />
 
             <Space
-                android:layout_width="262dp"
+                android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_weight="1"
                 android:background="#FFFFFF" />
