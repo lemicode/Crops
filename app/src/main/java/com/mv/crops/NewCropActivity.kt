@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
-class NewCrop : AppCompatActivity() {
+class NewCropActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_crop)
