@@ -117,7 +117,9 @@
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
             android:textColorHint="#191919"
-            app:cardCornerRadius="10dp" />
+            app:cardCornerRadius="10dp"
+            android:clickable="false"
+            android:focusable="false"/>
 
         <Space
             android:layout_width="match_parent"

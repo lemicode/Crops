@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="SplashScreen" parent="Theme.Crops">
-        <item name="android:windowBackground">@drawable/splash_screen</item>
+    <style name="datePickerTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">#03A63D</item>
     </style>
 </resources>
