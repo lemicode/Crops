@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_crops_view.xml" value="0.19067028985507245" />
+        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_new_crop.xml" value="0.22" />
+        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_see_crops.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/spinner_items.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/botones_redondos.xml" value="0.1925" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/botones_redondos_2.xml" value="0.2555" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/hint_input.xml" value="0.291" />
@@ -20,7 +26,6 @@
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_new_user.xml" value="0.2751586582048957" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_profile.xml" value="0.33" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
-        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/spinner_items.xml" value="0.17272338606241983" />
       </map>
     </option>
   </component>
