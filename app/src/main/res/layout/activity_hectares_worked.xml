@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HoursWorkedActivity">
+    tools:context=".HectaresWorkedActivity">
 
     <LinearLayout
         android:layout_width="389dp"
@@ -17,29 +17,13 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/hours_worked_text_title"
+            android:id="@+id/hectares_worked_text_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Horas Trabajadas"
+            android:text="Hectáreas Trabajadas"
             android:textColor="#000000"
             android:textSize="34sp"
             android:textStyle="bold" />
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="31dp"
-            android:background="#FFFFFF" />
-
-        <EditText
-            android:id="@+id/hours_worked_txt_time_worked"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="@drawable/inputs_redondos"
-            android:ems="10"
-            android:hint="Tiempo trabajado en minutos"
-            android:inputType="textPersonName"
-            android:paddingLeft="20dp"
-            android:textColorHint="#191919"
-            app:cardCornerRadius="10dp" />
 
         <Space
             android:layout_width="match_parent"
@@ -47,12 +31,12 @@
             android:background="#FFFFFF" />
 
         <EditText
-            android:id="@+id/hours_worked_txt_fecha"
+            android:id="@+id/hectares_worked_txt_amount"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/inputs_redondos"
             android:ems="10"
-            android:hint="Fecha"
+            android:hint="Cantidad de hectáreas"
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
             android:textColorHint="#191919"
@@ -63,7 +47,7 @@
             android:background="#FFFFFF" />
 
         <Button
-            android:id="@+id/hours_worked_btn_anadir"
+            android:id="@+id/hectares_worked_btn_anadir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_redondos_2"
