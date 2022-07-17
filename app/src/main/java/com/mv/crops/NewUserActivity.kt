@@ -30,7 +30,7 @@ class NewUserActivity : AppCompatActivity() {
         val boton_registrar = findViewById<Button>(R.id.new_user_btn_iniciar_sesion)
 
         //boton regresa al menu principal
-        val boton_regresar=findViewById<ImageView>(R.id.profile_btn_regresar)
+        val boton_regresar=findViewById<ImageView>(R.id.new_crop_btn_regresar)
         boton_regresar.setOnClickListener{
             val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)

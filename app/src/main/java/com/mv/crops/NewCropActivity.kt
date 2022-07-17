@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 
 class NewCropActivity : AppCompatActivity() {
@@ -21,7 +22,12 @@ class NewCropActivity : AppCompatActivity() {
         val txt_fecha_inicio = findViewById<EditText>(R.id.new_crop_txt_fecha_inicio)
         val boton_anadir = findViewById<Button>(R.id.new_crop_btn_anadir)
 
+        val boton_regresar=findViewById<ImageView>(R.id.new_crop_btn_regresar)
 
+        boton_regresar.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
         boton_anadir.setOnClickListener {
             try {
 

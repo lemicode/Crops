@@ -28,7 +28,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/profile_btn_regresar"
+                android:id="@+id/new_crop_btn_regresar"
                 android:layout_width="43dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"

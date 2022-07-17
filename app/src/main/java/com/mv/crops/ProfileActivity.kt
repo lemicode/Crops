@@ -3,7 +3,6 @@ package com.mv.crops
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.Window
 import android.widget.Button
 import android.widget.ImageView
@@ -33,7 +32,7 @@ class ProfileActivity : AppCompatActivity() {
             }
         }
 
-        val boton_regresar=findViewById<ImageView>(R.id.profile_btn_regresar)
+        val boton_regresar=findViewById<ImageView>(R.id.new_crop_btn_regresar)
 
         boton_regresar.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
