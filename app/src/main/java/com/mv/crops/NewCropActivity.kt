@@ -54,7 +54,7 @@ class NewCropActivity : AppCompatActivity() {
                 val area_cultivo = txt_area_cultivo.text.toString()
                 val fecha_inicio = txt_fecha_inicio.text.toString()
 
-                if (nombre_cultivo == "Seleccione un cultivo") throw Exception("Seleccione un cultivo")
+                if (nombre_cultivo == "Lista de cultivos") throw Exception("Seleccione un cultivo")
 
                 db.collection("crops").document(nombre_cultivo)
                     .set(
