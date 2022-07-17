@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Cultivas</string>
-
+    <string name="title_activity_maps">MapsActivity</string>
     <string-array name="cultivos">
         <item>Seleccione un cultivo</item>
         <item>Café</item>
