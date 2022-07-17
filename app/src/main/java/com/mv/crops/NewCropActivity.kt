@@ -13,9 +13,7 @@ import android.widget.Toast
 import com.google.firebase.firestore.FirebaseFirestore
 
 class NewCropActivity : AppCompatActivity() {
-
     private val db = FirebaseFirestore.getInstance()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
