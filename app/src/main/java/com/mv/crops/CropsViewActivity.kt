@@ -1,5 +1,6 @@
 package com.mv.crops
 
+import Models.Crop
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -7,6 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.widget.Button
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.SnapHelper
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.components.Description
@@ -16,6 +21,7 @@ import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
 import com.github.mikephil.charting.formatter.PercentFormatter
 import com.github.mikephil.charting.utils.MPPointF
+import com.mv.crops.adapters.CropAdapter
 
 class CropsViewActivity : AppCompatActivity() {
 
@@ -23,6 +29,10 @@ class CropsViewActivity : AppCompatActivity() {
     private lateinit var pieDataSet: PieDataSet
     private lateinit var pieData: PieData
     private lateinit var pieChartDescription: Description
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var cropList: ArrayList<Crop>
+    private lateinit var cropAdapter: CropAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -111,6 +121,8 @@ class CropsViewActivity : AppCompatActivity() {
 
         pieChart.invalidate()
 
+        initRecyclerView()
+
     }
 
     private fun getPieChartData() {
@@ -122,6 +134,29 @@ class CropsViewActivity : AppCompatActivity() {
 
         pieChartDescription = Description()
         pieChartDescription.text = ""
+    }
+
+    private fun initRecyclerView() {
+        recyclerView = findViewById(R.id.crops_view_recyclerview_horizontal)
+        recyclerView.setHasFixedSize(true)
+        recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
+        cropList = ArrayList()
+        addCrop()
+        cropAdapter = CropAdapter(cropList)
+        recyclerView.adapter = cropAdapter
+    }
+
+    private fun addCrop() {
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
     }
 
 }
