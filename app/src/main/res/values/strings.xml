@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cultivas</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_maps2">MapsActivity2</string>
 </resources>
