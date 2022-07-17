@@ -1,5 +1,6 @@
 package com.mv.crops
 
+import Models.User
 import android.content.ContentValues
 import android.content.ContentValues.TAG
 import android.content.Intent
@@ -22,13 +23,14 @@ class NewCropActivity : AppCompatActivity() {
         setContentView(R.layout.activity_new_crop)
 
         val txt_ubicacion = findViewById<EditText>(R.id.new_crop_txt_ubicacion)
+        val txt_nombre_cultivo = findViewById<EditText>(R.id.new_crop_txt_nombre_cultivo)
         val txt_area_cultivo = findViewById<EditText>(R.id.new_crop_txt_area_cultivo)
         val txt_fecha_inicio = findViewById<EditText>(R.id.new_crop_txt_fecha_inicio)
         val boton_anadir = findViewById<Button>(R.id.new_crop_btn_anadir)
         val boton_regresar=findViewById<ImageView>(R.id.new_crop_btn_regresar)
 
         //Creación del selector de cultivos
-        var posicion_cultivo_seleccionado = 0
+        /*var posicion_cultivo_seleccionado = 0
         val selector_nombres_cultivos = findViewById<Spinner>(R.id.new_crop_spinner_nombre_cultivo)
         val lista_cultivos = resources.getStringArray(R.array.cultivos)
         val adapter = ArrayAdapter(this, R.layout.spinner_items, lista_cultivos)
@@ -40,7 +42,7 @@ class NewCropActivity : AppCompatActivity() {
             override fun onNothingSelected(p0: AdapterView<*>?) {
                 TODO("Not yet implemented")
             }
-        }
+        }*/
 
         boton_regresar.setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
@@ -50,13 +52,14 @@ class NewCropActivity : AppCompatActivity() {
         boton_anadir.setOnClickListener {
             try {
                 val ubicacion = txt_ubicacion.text.toString()
-                val nombre_cultivo = lista_cultivos[posicion_cultivo_seleccionado]
+                val nombre_cultivo = txt_nombre_cultivo.text.toString()
                 val area_cultivo = txt_area_cultivo.text.toString()
                 val fecha_inicio = txt_fecha_inicio.text.toString()
 
                 if (nombre_cultivo == "Lista de cultivos") throw Exception("Seleccione un cultivo")
 
-                db.collection("crops").document(nombre_cultivo)
+                db.collection("crops").document(User.getEmail())
+                    .collection("cultivos").document(nombre_cultivo)
                     .set(
                         hashMapOf(
                             "ubicacion" to ubicacion,
@@ -71,7 +74,7 @@ class NewCropActivity : AppCompatActivity() {
                             Toast.LENGTH_LONG
                         ).show()
                         txt_ubicacion.setText(null)
-                        selector_nombres_cultivos.setSelection(0)
+                        txt_nombre_cultivo.setText(null)
                         txt_area_cultivo.setText(null)
                         txt_fecha_inicio.setText(null)
                     }
