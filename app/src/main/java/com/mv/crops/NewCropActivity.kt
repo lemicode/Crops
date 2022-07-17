@@ -9,8 +9,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import com.google.firebase.firestore.FirebaseFirestore
 
 class NewCropActivity : AppCompatActivity() {
+
+    private val db = FirebaseFirestore.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_crop)
@@ -37,7 +41,14 @@ class NewCropActivity : AppCompatActivity() {
                 val area_cultivo = txt_area_cultivo.text.toString()
                 val fecha_inicio = txt_fecha_inicio.text.toString()
 
-
+                db.collection("crops").document(nombre_cultivo).set{
+                    hashMapOf(
+                        "ubicacion" to ubicacion,
+                        "tipo" to tipo_cultivo,
+                        "area" to area_cultivo,
+                        "fecha_inicio" to fecha_inicio
+                    )
+                }
 
             } catch (e: Exception) {
                 Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
