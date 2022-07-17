@@ -97,6 +97,7 @@
                         android:layout_marginBottom="75dp"
                         android:translationX="-5dp"
                         android:translationY="10dp"
+                        android:src="@drawable/ic_icono_card_ver_cultivo"
                         tools:srcCompat="@drawable/ic_icono_card_ver_cultivo" />
 
                     <TextView
@@ -146,6 +147,7 @@
                     android:layout_width="170dp"
                     android:layout_height="169dp"
                     android:layout_margin="0dp"
+                    android:src="@drawable/agregar_cultivos_imagen"
                     android:background="@drawable/agregar_cultivos_imagen">
 
                     <!--Add cardview contents-->
@@ -241,6 +243,7 @@
                         android:layout_marginBottom="92dp"
                         android:translationX="-5dp"
                         android:translationY="40dp"
+                        android:src="@drawable/ic_icono_card_actividades"
                         tools:srcCompat="@drawable/ic_icono_card_actividades" />
 
                     <TextView
@@ -309,6 +312,7 @@
                         android:layout_marginBottom="102dp"
                         android:translationX="-5dp"
                         android:translationY="40dp"
+                        android:src="@drawable/ic_icono_card_perfil"
                         tools:srcCompat="@drawable/ic_icono_card_perfil" />
 
                     <TextView
@@ -393,6 +397,7 @@
                     android:layout_marginBottom="102dp"
                     android:translationX="90dp"
                     android:translationY="-10dp"
+                    android:src="@drawable/ic_icono_card_tip"
                     tools:srcCompat="@drawable/ic_icono_card_tips" />
 
                 <TextView
