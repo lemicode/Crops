@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 // Back to main page
-                                val intent = Intent(this, HomeActivity::class.java)
+                                val intent = Intent(this, SplashScreenActivity::class.java)
                                 startActivity(intent)
                             } else {
                                 // If sign in fails, display a message to the user.
