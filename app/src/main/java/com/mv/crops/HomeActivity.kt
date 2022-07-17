@@ -35,10 +35,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         tips.setOnClickListener{
-            val intent = Intent(this, MapsActivity::class.java)
-            intent.putExtra("latitude",4.72977)
-            intent.putExtra("longitude",-73.96835)
-            startActivity(intent)
+
         }
 
     }

@@ -17,7 +17,7 @@ class CropActivity : AppCompatActivity() {
         var boton_informe = findViewById<Button>(R.id.crop_btn_reporte)
 
         boton_informe.setOnClickListener {
-            val intent = Intent(this, BalanceActivity::class.java)
+            val intent = Intent(this, ReportActivity::class.java)
             startActivity(intent)
         }
 
