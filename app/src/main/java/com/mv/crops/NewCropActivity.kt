@@ -8,8 +8,12 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.google.firebase.firestore.FirebaseFirestore
 
 class NewCropActivity : AppCompatActivity() {
+
+    private val db = FirebaseFirestore.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_crop)
@@ -21,7 +25,6 @@ class NewCropActivity : AppCompatActivity() {
         val txt_fecha_inicio = findViewById<EditText>(R.id.new_crop_txt_fecha_inicio)
         val boton_anadir = findViewById<Button>(R.id.new_crop_btn_anadir)
 
-
         boton_anadir.setOnClickListener {
             try {
 
@@ -31,7 +34,14 @@ class NewCropActivity : AppCompatActivity() {
                 val area_cultivo = txt_area_cultivo.text.toString()
                 val fecha_inicio = txt_fecha_inicio.text.toString()
 
-
+                db.collection("crops").document(nombre_cultivo).set{
+                    hashMapOf(
+                        "ubicacion" to ubicacion,
+                        "tipo" to tipo_cultivo,
+                        "area" to area_cultivo,
+                        "fecha_inicio" to fecha_inicio
+                    )
+                }
 
             } catch (e: Exception) {
                 Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
