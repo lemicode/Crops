@@ -10,8 +10,12 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
+import com.google.firebase.firestore.FirebaseFirestore
 
 class NewCropActivity : AppCompatActivity() {
+
+    private val db = FirebaseFirestore.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -19,7 +23,6 @@ class NewCropActivity : AppCompatActivity() {
         setContentView(R.layout.activity_new_crop)
 
         val txt_ubicacion = findViewById<EditText>(R.id.new_crop_txt_ubicacion)
-        val txt_tipo_cultivo = findViewById<EditText>(R.id.new_crop_txt_tipo_cultivo)
         val txt_nombre_cultivo = findViewById<EditText>(R.id.new_crop_txt_nombre_cultivo)
         val txt_area_cultivo = findViewById<EditText>(R.id.new_crop_txt_area_cultivo)
         val txt_fecha_inicio = findViewById<EditText>(R.id.new_crop_txt_fecha_inicio)
