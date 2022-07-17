@@ -3,17 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.177" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/ic_fondo_login_cultiva.xml" value="0.177" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/ic_launcher_background.xml" value="0.177" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/inputs_redondos.xml" value="0.177" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_home.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_hours_worked.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_new_crop.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_new_user.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_profile.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_splash_screen.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/botones_redondos.xml" value="0.1925" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/botones_redondos_2.xml" value="0.2555" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/hint_input.xml" value="0.291" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/ic_fondo_login_cultiva.xml" value="0.1925" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/ic_icono_card_agregar_cultivo.xml" value="0.2555" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/ic_icono_card_tips.xml" value="0.26" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/ic_registro_fondo.xml" value="0.26" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/ic_volver.xml" value="0.26" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/inputs_redondos.xml" value="0.291" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/splashscreen.xml" value="0.2505" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_load.xml" value="0.20179563916203505" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_new_user.xml" value="0.2751586582048957" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
       </map>
     </option>
   </component>
