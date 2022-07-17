@@ -9,7 +9,7 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        Thread.sleep(3000);
+        Thread.sleep(10000);
 
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
