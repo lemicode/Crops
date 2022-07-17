@@ -1,5 +1,6 @@
 package com.mv.crops
 
+import Models.User
 import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -55,6 +56,7 @@ class MainActivity : AppCompatActivity() {
                             if (task.isSuccessful) {
                                 // Sign in success, update UI with the signed-in user's information
                                 Log.d(ContentValues.TAG, "signInWithEmailAndPassword:success")
+                                User.setEmail(correo)
                                 Toast.makeText(
                                     baseContext, "Iniciando sesión",
                                     Toast.LENGTH_SHORT
