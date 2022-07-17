@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/registro_fondo"
     tools:context=".ProfileActivity">
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="356dp"
@@ -26,7 +28,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/new_user_btn_regresar"
+                android:id="@+id/profile_btn_regresar"
                 android:layout_width="43dp"
                 android:layout_height="25dp"
                 android:layout_weight="1"
