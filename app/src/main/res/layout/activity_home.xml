@@ -397,7 +397,7 @@
                     android:layout_marginBottom="102dp"
                     android:translationX="90dp"
                     android:translationY="-10dp"
-                    android:src="@drawable/ic_icono_card_tip"
+                    android:src="@drawable/ic_icono_card_tips"
                     tools:srcCompat="@drawable/ic_icono_card_tips" />
 
                 <TextView
