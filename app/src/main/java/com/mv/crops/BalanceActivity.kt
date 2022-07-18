@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
+import java.text.DecimalFormat
 
 class BalanceActivity : AppCompatActivity() {
 
@@ -56,14 +57,14 @@ class BalanceActivity : AppCompatActivity() {
                 .get()
                 .addOnSuccessListener { result ->
                     Log.d(ContentValues.TAG, "DocumentSnapshot successfully written!")
-                    /*var total = 0.0
+                    var total = 0.0
+                    val numberFormat = DecimalFormat("#,###.##")
                     for (document in result) {
-                        var minutos = document.data["minutos"] as Float
-                        total += minutos
+                        total += document.data["minutos"].toString().toDouble()
                     }
-                    txt_total_tiempo.text = "Total de Horas: ${total / 60}"*/
+                    txt_total_tiempo.text = "Total de Horas: ${numberFormat.format(total / 60)}"
                 }
-                .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error al guardar en BD", e) }
+                .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error al consultar BD", e) }
         } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
