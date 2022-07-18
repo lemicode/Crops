@@ -10,10 +10,14 @@ import android.util.Log
 import android.view.View
 import android.view.Window
 import android.widget.*
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 
 class NewCropActivity : AppCompatActivity() {
     private val db = FirebaseFirestore.getInstance()
+    private lateinit var auth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -22,6 +26,7 @@ class NewCropActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_new_crop)
 
+        auth = Firebase.auth
         val txt_ubicacion = findViewById<EditText>(R.id.new_crop_txt_ubicacion)
         val txt_nombre_cultivo = findViewById<EditText>(R.id.new_crop_txt_nombre_cultivo)
         val txt_area_cultivo = findViewById<EditText>(R.id.new_crop_txt_area_cultivo)
@@ -58,7 +63,7 @@ class NewCropActivity : AppCompatActivity() {
 
                 if (nombre_cultivo == "Lista de cultivos") throw Exception("Seleccione un cultivo")
 
-                db.collection("crops").document(User.getEmail())
+                db.collection("crops").document("${auth.currentUser!!.email}")
                     .collection("cultivos").document(nombre_cultivo)
                     .set(
                         hashMapOf(
