@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Window
 import android.widget.Button
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.github.mikephil.charting.animation.Easing
@@ -168,6 +169,12 @@ class CropsViewActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
         cropAdapter = CropAdapter(cropList)
         recyclerView.adapter = cropAdapter
+        cropAdapter.setOnItemClickListener(object: CropAdapter.onItemClickListener {
+            override fun onItemClick(position: Int) {
+                Toast.makeText(this@CropsViewActivity, "Seleccionó ${cropList[position].nombre}", Toast.LENGTH_SHORT).show()
+
+            }
+        })
     }
 
 }
