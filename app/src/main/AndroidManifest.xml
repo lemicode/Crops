@@ -58,6 +58,12 @@
             android:name=".HoursWorkedActivity"
             android:exported="false" />
         <activity
+            android:name=".IrrigatedWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HectaresWorkedActivity"
+            android:exported="false" />
+        <activity
             android:name=".NewCropActivity"
             android:exported="false" />
         <activity

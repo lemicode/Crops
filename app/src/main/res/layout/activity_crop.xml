@@ -11,12 +11,74 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/crop_txt_cultivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cultivo de ..."
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
         <Button
             android:id="@+id/crop_btn_reporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_redondos"
             android:text="Informe General"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/crop_btn_horas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondos"
+            android:text="Horas Trabajdas"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/crop_btn_agua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondos"
+            android:text="Agua Regada"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/crop_btn_hectareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondos"
+            android:text="Hectareas Trabajadas"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="18sp"

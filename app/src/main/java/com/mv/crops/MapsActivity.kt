@@ -100,7 +100,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         mMap.addMarker(MarkerOptions().position(cropLocation).title("Ubicacion del cultivo"))
         //Move the camera to the crop's location and zoom in
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(cropLocation, 16.0f));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(cropLocation, 12.0f));
 
         tileOverlay = mMap.addTileOverlay(
             TileOverlayOptions()

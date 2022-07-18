@@ -20,6 +20,7 @@ class BalanceActivity : AppCompatActivity() {
     private lateinit var barDataSet: BarDataSet
     private lateinit var barData: BarData
     private lateinit var barChartDescription: Description
+    private lateinit var barChart: BarChart
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,13 +28,43 @@ class BalanceActivity : AppCompatActivity() {
         getSupportActionBar()?.hide()
         setContentView(R.layout.activity_balance)
 
-        var barChart = findViewById<BarChart>(R.id.barChart)
+        barChart = findViewById<BarChart>(R.id.barChart)
+
+        getBarChartData()
+
+    }
+
+    private fun getBarChartData() {
+
+        barValuesList = ArrayList()
+        barValuesList.add(BarEntry(1f, 100f, "Lunes"))
+        barValuesList.add(BarEntry(2f, 500f, "Martes"))
+        barValuesList.add(BarEntry(3f, 200f, "Miercoles"))
+        barValuesList.add(BarEntry(4f, 300f, "Jueves"))
+        barValuesList.add(BarEntry(5f, 400f, "Viernes"))
+        barValuesList.add(BarEntry(6f, 50f, "Sabado"))
+        barValuesList.add(BarEntry(7f, 500f, "Domingo"))
+
+        barLabelsList = ArrayList<String>()
+        barLabelsList.add("Lunes")
+        barLabelsList.add("Martes")
+        barLabelsList.add("Miercoles")
+        barLabelsList.add("Jueves")
+        barLabelsList.add("Viernes")
+        barLabelsList.add("Sabado")
+        barLabelsList.add("Domingo")
+
+        barChartDescription = Description()
+        barChartDescription.text = ""
+
+        drawBarChart()
+
+    }
 
 //        ===============================================================
 //        Bar Chart
 //        ===============================================================
-
-        getBarChartData()
+    private fun drawBarChart() {
 
         barDataSet = BarDataSet(barValuesList, "Dias")
         barDataSet.setColors(
@@ -70,30 +101,6 @@ class BalanceActivity : AppCompatActivity() {
             return mValues[value.toInt() - 1]
         }
 
-    }
-
-    private fun getBarChartData() {
-
-        barValuesList = ArrayList()
-        barValuesList.add(BarEntry(1f, 100f, "Lunes"))
-        barValuesList.add(BarEntry(2f, 500f, "Martes"))
-        barValuesList.add(BarEntry(3f, 200f, "Miercoles"))
-        barValuesList.add(BarEntry(4f, 300f, "Jueves"))
-        barValuesList.add(BarEntry(5f, 400f, "Viernes"))
-        barValuesList.add(BarEntry(6f, 50f, "Sabado"))
-        barValuesList.add(BarEntry(7f, 500f, "Domingo"))
-
-        barLabelsList = ArrayList<String>()
-        barLabelsList.add("Lunes")
-        barLabelsList.add("Martes")
-        barLabelsList.add("Miercoles")
-        barLabelsList.add("Jueves")
-        barLabelsList.add("Viernes")
-        barLabelsList.add("Sabado")
-        barLabelsList.add("Domingo")
-
-        barChartDescription = Description()
-        barChartDescription.text = ""
     }
 
 }

@@ -11,6 +11,8 @@ class IrrigatedWaterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_irrigated_water)
 
+        var cultivo = getIntent().getExtras()!!.getString("cultivo")
+
         val txt_cantidad_agua = findViewById<EditText>(R.id.irrigated_water_txt_amount)
         val boton_anadir = findViewById<Button>(R.id.irrigated_water_btn_anadir)
 

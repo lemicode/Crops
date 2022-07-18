@@ -11,6 +11,8 @@ class HoursWorkedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hours_worked)
 
+        var cultivo = getIntent().getExtras()!!.getString("cultivo")
+
         val txt_tiempo_trabajado = findViewById<EditText>(R.id.hours_worked_txt_time_worked)
         val txt_fecha = findViewById<EditText>(R.id.hours_worked_txt_fecha)
         val boton_anadir = findViewById<Button>(R.id.hours_worked_btn_anadir)
