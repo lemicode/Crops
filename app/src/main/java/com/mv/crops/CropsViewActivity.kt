@@ -70,7 +70,7 @@ class CropsViewActivity : AppCompatActivity() {
 
     private fun getPieChartData() {
 
-        cultivosList = ArrayList()
+        cropList = ArrayList()
         pieValuesList = ArrayList()
 
         db.collection("crops/${auth.currentUser!!.email}/cultivos")
@@ -78,7 +78,7 @@ class CropsViewActivity : AppCompatActivity() {
             .addOnSuccessListener { result ->
                 for (document in result) {
                     Log.d(TAG, "${document.id} => ${document.data}")
-                    cultivosList.add(document.id)
+                    cropList.add(Crop(document.id))
                     pieValuesList.add(PieEntry(document.data["area"].toString().toFloat(), "${document.data["area"].toString()}ha   ${document.id}"))
                 }
                 initRecyclerView()
@@ -166,25 +166,11 @@ class CropsViewActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
-
-//        cultivosList
-
         recyclerView = findViewById(R.id.crops_view_recyclerview_horizontal)
         recyclerView.setHasFixedSize(true)
         recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-        cropList = ArrayList()
-        addCrop()
         cropAdapter = CropAdapter(cropList)
         recyclerView.adapter = cropAdapter
-    }
-
-    private fun addCrop() {
-        cropList.add(Crop("limon"))
-        cropList.add(Crop("limon"))
-        cropList.add(Crop("limon"))
-        cropList.add(Crop("limon"))
-        cropList.add(Crop("limon"))
-        cropList.add(Crop("limon"))
     }
 
 }

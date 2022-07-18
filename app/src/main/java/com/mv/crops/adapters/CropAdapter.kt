@@ -25,8 +25,6 @@ class CropAdapter(private val cropList: List<Crop>): RecyclerView.Adapter<CropAd
         holder.cropName.text = crop.nombre
     }
 
-    override fun getItemCount(): Int {
-        return cropList.size
-    }
+    override fun getItemCount(): Int = cropList.size
 
 }
