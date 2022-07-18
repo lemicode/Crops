@@ -23,11 +23,11 @@
             app:cardCornerRadius="10dp" />
 
         <Button
-            android:id="@+id/report_btn_mapa"
+            android:id="@+id/report_btn_clima"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_redondos"
-            android:text="Mapa"
+            android:text="Clima de la region"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="18sp"

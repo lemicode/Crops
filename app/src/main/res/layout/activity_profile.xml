@@ -61,6 +61,15 @@
             android:layout_height="26dp"
             android:background="#FFFFFF" />
 
+        <TextView
+            android:id="@+id/profile_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#909090"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="26dp"

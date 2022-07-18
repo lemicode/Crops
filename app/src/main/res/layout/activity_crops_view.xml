@@ -42,6 +42,17 @@
             android:layout_height="27dp"
             android:background="#FFFFFF" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/crops_view_recyclerview_horizontal"
+            android:scrollbars="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:background="#FFFFFF" />
+
         <TextView
             android:id="@+id/hours_worked_text_title"
             android:layout_width="match_parent"
