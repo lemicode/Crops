@@ -29,6 +29,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         ver_cultivos.setOnClickListener {
             val intent = Intent(this, CropsViewActivity::class.java)
             startActivity(intent)
