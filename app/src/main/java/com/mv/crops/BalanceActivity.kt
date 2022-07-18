@@ -10,6 +10,7 @@ import android.view.Window
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.view.marginBottom
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.Description
@@ -21,7 +22,9 @@ import com.github.mikephil.charting.formatter.IAxisValueFormatter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.Query
 import com.google.firebase.ktx.Firebase
+import java.text.DecimalFormat
 
 class BalanceActivity : AppCompatActivity() {
 
@@ -52,50 +55,33 @@ class BalanceActivity : AppCompatActivity() {
         }
 
         try {
+
+            barValuesList = ArrayList()
+            barLabelsList = ArrayList<String>()
+
             db.collection("crops/${auth.currentUser!!.email}/cultivos/${cultivo}/tiempos_trabajados")
+                .orderBy("fecha", Query.Direction.DESCENDING)
+                .limit(7)
                 .get()
                 .addOnSuccessListener { result ->
-                    Log.d(ContentValues.TAG, "DocumentSnapshot successfully written!")
-                    /*var total = 0.0
+
+                    var total = 0.0
+                    var i : Float = 1f
+                    val numberFormat = DecimalFormat("#,###.##")
                     for (document in result) {
-                        var minutos = document.data["minutos"] as Float
-                        total += minutos
+                        Log.d(ContentValues.TAG, document.data.toString())
+                        barValuesList.add(BarEntry(i, document.data["minutos"].toString().toFloat(), document.data["fecha"].toString()))
+                        barLabelsList.add(document.data["fecha"].toString())
+                        i += 1
+                        total += document.data["minutos"].toString().toDouble()
                     }
-                    txt_total_tiempo.text = "Total de Horas: ${total / 60}"*/
+                    txt_total_tiempo.text = "Total de Horas: ${numberFormat.format(total / 60)}"
+                    drawBarChart()
                 }
                 .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error al guardar en BD", e) }
         } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
-
-        barChart = findViewById<BarChart>(R.id.barChart)
-        getBarChartData()
-    }
-
-    private fun getBarChartData() {
-
-        barValuesList = ArrayList()
-        barValuesList.add(BarEntry(1f, 100f, "Lunes"))
-        barValuesList.add(BarEntry(2f, 500f, "Martes"))
-        barValuesList.add(BarEntry(3f, 200f, "Miercoles"))
-        barValuesList.add(BarEntry(4f, 300f, "Jueves"))
-        barValuesList.add(BarEntry(5f, 400f, "Viernes"))
-        barValuesList.add(BarEntry(6f, 50f, "Sabado"))
-        barValuesList.add(BarEntry(7f, 500f, "Domingo"))
-
-        barLabelsList = ArrayList<String>()
-        barLabelsList.add("Lunes")
-        barLabelsList.add("Martes")
-        barLabelsList.add("Miercoles")
-        barLabelsList.add("Jueves")
-        barLabelsList.add("Viernes")
-        barLabelsList.add("Sabado")
-        barLabelsList.add("Domingo")
-
-        barChartDescription = Description()
-        barChartDescription.text = ""
-
-        drawBarChart()
 
     }
 
@@ -103,6 +89,14 @@ class BalanceActivity : AppCompatActivity() {
 //        Bar Chart
 //        ===============================================================
     private fun drawBarChart() {
+
+        barChart = findViewById<BarChart>(R.id.barChart)
+
+        barChartDescription = Description()
+        barChartDescription.text = ""
+        barChart.setDescription(barChartDescription)
+        barChart.legend.isEnabled = false
+
 
         barDataSet = BarDataSet(barValuesList, "Dias")
         barDataSet.setColors(
@@ -117,12 +111,15 @@ class BalanceActivity : AppCompatActivity() {
         barDataSet.valueTextSize = 10f
         barData = BarData(barDataSet)
         barChart.data = barData
-        barChart.setDescription(barChartDescription)
-        barChart.legend.isEnabled = false
+
+        barChart.extraBottomOffset = 100f
 
         var xAxis = barChart.getXAxis()
         xAxis.setValueFormatter(MyAxisValueFormatter(barLabelsList))
+        xAxis.labelRotationAngle = 90f
         xAxis.position = XAxis.XAxisPosition.BOTTOM
+
+        barChart.invalidate()
 
     }
 
@@ -135,8 +132,7 @@ class BalanceActivity : AppCompatActivity() {
         }
 
         override fun getFormattedValue(value: Float, axis: AxisBase?): String {
-            println(value)
-            return mValues[value.toInt() - 1]
+            return mValues[value.toInt()]
         }
 
     }

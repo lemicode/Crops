@@ -3,24 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_balance.xml" value="0.2296195652173913" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_balance.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_crop.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_crops_view.xml" value="0.25" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_hectares_worked.xml" value="0.22" />
+        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_crops_view.xml" value="0.1" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_home.xml" value="0.1" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_hours_worked.xml" value="0.18292682926829268" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_irrigated_water.xml" value="0.22" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_new_crop.xml" value="0.22" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_profile.xml" value="0.19791666666666666" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_report.xml" value="0.192481884057971" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_see_crops.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_tips.xml" value="0.19791666666666666" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/activity_weather.xml" value="0.192481884057971" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/crop_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/recyclerview_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/layout/spinner_items.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Trabajo/Desktop/Curso_Desarrollo_Movil/Apps/Crops2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1085" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/botones_redondos.xml" value="0.1925" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/botones_redondos_2.xml" value="0.2555" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/hint_input.xml" value="0.291" />
