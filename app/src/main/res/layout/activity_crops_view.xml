@@ -67,21 +67,5 @@
             android:layout_width="match_parent"
             android:layout_height="200dp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="27dp"
-            android:background="#FFFFFF" />
-
-        <Button
-            android:id="@+id/crops_view_crop_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondos"
-            android:text="Imagen Cultivo"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp"
-            app:cardCornerRadius="10dp" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
