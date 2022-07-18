@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crops">
         <activity
+            android:name=".TipsActivity"
+            android:exported="false" />
+        <activity
             android:name=".WeatherActivity"
             android:exported="false" />
         <activity

@@ -2,72 +2,53 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/list_view_imagenes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/registro_fondo"
     tools:context=".TipsActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="356dp"
-        android:layout_height="829dp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:background="#FFFFFF" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
         <ImageView
-            android:id="@+id/new_crop_btn_regresar"
-            android:layout_width="43dp"
+            android:id="@+id/tips_btn_regresar"
+            android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_weight="1"
+            android:layout_gravity="start"
             app:srcCompat="@drawable/ic_volver" />
 
-        <Space
-            android:layout_width="262dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:background="#FFFFFF" />
-
-    </LinearLayout>
-
-        <Space
-            android:id="@+id/space"
-            android:layout_width="match_parent"
-            android:layout_height="27dp"
-            android:background="#FFFFFF" />
-
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/tips_text_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tips"
+            android:text="Consejos para un buen cultivo"
             android:textColor="#000000"
             android:textSize="34sp"
             android:textStyle="bold" />
+
         <Space
             android:layout_width="match_parent"
-            android:layout_height="26dp"
+            android:layout_height="31dp"
             android:background="#FFFFFF" />
 
+
         <TextView
-            android:id="@+id/tv_tips"
+            android:id="@+id/tips_textview_texto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18dp" />
+            android:text="Cargando tips..." />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="#FFFFFF" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
