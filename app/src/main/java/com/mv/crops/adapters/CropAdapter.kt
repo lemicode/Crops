@@ -4,15 +4,15 @@ import Models.Crop
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.mv.crops.R
 
 class CropAdapter(private val cropList: List<Crop>): RecyclerView.Adapter<CropAdapter.CropViewHolder>() {
 
     class CropViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val cropName: TextView = itemView.findViewById(R.id.recyclerview_item_textview_title)
+        val cropName: TextView = itemView.findViewById(R.id.crop_item_title)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CropViewHolder {
