@@ -40,7 +40,6 @@ class CropsViewActivity : AppCompatActivity() {
     private lateinit var cropAdapter: CropAdapter
 
     private lateinit var pieChart: PieChart
-    private lateinit var cultivosList: ArrayList<String>
 
     private lateinit var auth: FirebaseAuth;
     private val db = Firebase.firestore
