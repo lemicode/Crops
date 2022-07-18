@@ -3,24 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable-nodpi/spinner_background.xml" value="0.1735" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.177" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/ic_fondo_login_cultiva.xml" value="0.177" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/ic_launcher_background.xml" value="0.177" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/drawable/inputs_redondos.xml" value="0.177" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_balance.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_crop.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_crops_view.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_home.xml" value="0.16354166666666667" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_hours_worked.xml" value="0.16354166666666667" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_maps.xml" value="0.16458333333333333" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_maps2.xml" value="0.16197916666666667" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_new_crop.xml" value="0.16354166666666667" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_new_user.xml" value="0.16354166666666667" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_profile.xml" value="0.16354166666666667" />
-        <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_report.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Diego/Documents/Development/Desarrollo Movil/AndroidStudio/Crops/app/src/main/res/layout/activity_splash_screen.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Crops/app/src/main/res/layout/activity_crop.xml" value="0.1" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Crops/app/src/main/res/layout/activity_crops_view.xml" value="0.1" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Crops/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Crops/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Crops/app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/Crops/app/src/main/res/layout/activity_tips.xml" value="0.22" />
       </map>
     </option>
   </component>

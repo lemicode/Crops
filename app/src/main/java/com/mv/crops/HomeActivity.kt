@@ -35,6 +35,8 @@ class HomeActivity : AppCompatActivity() {
         }
 
         tips.setOnClickListener{
+            val intent = Intent(this, TipsActivity::class.java)
+            startActivity(intent)
 
         }
 
