@@ -28,6 +28,8 @@ class BalanceActivity : AppCompatActivity() {
         getSupportActionBar()?.hide()
         setContentView(R.layout.activity_balance)
 
+        var cultivo = getIntent().getExtras()!!.getString("cultivo")
+
         barChart = findViewById<BarChart>(R.id.barChart)
 
         getBarChartData()

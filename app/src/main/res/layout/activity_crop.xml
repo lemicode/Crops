@@ -102,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_redondos"
-            android:text="Horas Trabajdas"
+            android:text="Horas Trabajadas"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
