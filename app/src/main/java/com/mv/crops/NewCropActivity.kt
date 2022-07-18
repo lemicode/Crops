@@ -20,10 +20,8 @@ class NewCropActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar()?.hide();
-
         setContentView(R.layout.activity_new_crop)
 
         auth = Firebase.auth
@@ -61,7 +59,9 @@ class NewCropActivity : AppCompatActivity() {
                 val area_cultivo = txt_area_cultivo.text.toString()
                 val fecha_inicio = txt_fecha_inicio.text.toString()
 
-                if (nombre_cultivo == "Lista de cultivos") throw Exception("Seleccione un cultivo")
+                if (nombre_cultivo.isEmpty() || ubicacion.isEmpty() || area_cultivo.isEmpty() || fecha_inicio.isEmpty()) {
+                    throw Exception("Diligencie el formulario")
+                }
 
                 db.collection("crops").document("${auth.currentUser!!.email}")
                     .collection("cultivos").document(nombre_cultivo)

@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Window
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -50,6 +51,13 @@ class CropsViewActivity : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar()?.hide();
         setContentView(R.layout.activity_crops_view)
+
+        val boton_regresar = findViewById<ImageView>(R.id.crops_view_btn_regresar)
+
+        boton_regresar.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
         auth = Firebase.auth
 

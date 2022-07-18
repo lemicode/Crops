@@ -8,14 +8,21 @@
     tools:context=".IrrigatedWaterActivity">
 
     <LinearLayout
-        android:layout_width="340dp"
-        android:layout_height="787dp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/irrigated_water_btn_regresar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            app:srcCompat="@drawable/ic_volver" />
 
         <TextView
             android:id="@+id/irrigated_water_text_title"
@@ -38,6 +45,25 @@
             android:background="@drawable/inputs_redondos"
             android:ems="10"
             android:hint="Cantidad en metros cúbicos"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColorHint="#191919"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/irrigated_water_txt_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/inputs_redondos"
+            android:clickable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="Fecha"
             android:inputType="textPersonName"
             android:paddingLeft="20dp"
             android:textColorHint="#191919"

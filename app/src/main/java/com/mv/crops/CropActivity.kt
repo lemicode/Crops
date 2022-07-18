@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class CropActivity : AppCompatActivity() {
@@ -22,6 +23,12 @@ class CropActivity : AppCompatActivity() {
         var boton_horas_trabajadas = findViewById<Button>(R.id.crop_btn_horas)
         var boton_agua_regada = findViewById<Button>(R.id.crop_btn_agua)
         var boton_hectareas_trabajadas = findViewById<Button>(R.id.crop_btn_hectareas)
+        val boton_regresar = findViewById<ImageView>(R.id.crop_btn_regresar)
+
+        boton_regresar.setOnClickListener {
+            val intent = Intent(this, CropsViewActivity::class.java)
+            startActivity(intent)
+        }
 
         texto_cultivo.text = "Cultivo de $cultivo"
 
