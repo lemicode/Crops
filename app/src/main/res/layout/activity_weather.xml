@@ -92,6 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:src="@drawable/temperatura"
                 tools:srcCompat="@drawable/temperatura" />
 
             <ImageView
@@ -99,6 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:src="@drawable/viento"
                 tools:srcCompat="@drawable/viento" />
 
             <ImageView
@@ -106,6 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:src="@drawable/lluvia"
                 tools:srcCompat="@drawable/lluvia" />
         </LinearLayout>
 
@@ -148,6 +151,7 @@
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/humedad"
                 tools:srcCompat="@drawable/humedad" />
 
             <ImageView
@@ -155,6 +159,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:src="@drawable/sol_salida"
                 tools:srcCompat="@drawable/sol_salida" />
 
             <ImageView
@@ -162,6 +167,7 @@
                 android:layout_width="40dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:src="@drawable/sol_bajada"
                 tools:srcCompat="@drawable/sol_bajada" />
         </LinearLayout>
 
