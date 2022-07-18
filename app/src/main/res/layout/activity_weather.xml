@@ -20,6 +20,13 @@
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
+        <ImageView
+            android:id="@+id/weather_btn_regresar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            app:srcCompat="@drawable/ic_volver" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="219dp"

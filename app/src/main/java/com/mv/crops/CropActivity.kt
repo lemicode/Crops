@@ -18,12 +18,25 @@ class CropActivity : AppCompatActivity() {
 
         var cultivo = getIntent().getExtras()!!.getString("cultivo")
 
-        var boton_informe = findViewById<Button>(R.id.crop_btn_reporte)
         var texto_cultivo = findViewById<TextView>(R.id.crop_txt_cultivo)
         var boton_horas_trabajadas = findViewById<Button>(R.id.crop_btn_horas)
         var boton_agua_regada = findViewById<Button>(R.id.crop_btn_agua)
         var boton_hectareas_trabajadas = findViewById<Button>(R.id.crop_btn_hectareas)
         val boton_regresar = findViewById<ImageView>(R.id.crop_btn_regresar)
+        var boton_balance = findViewById<Button>(R.id.crop_btn_balance)
+        var boton_clima = findViewById<Button>(R.id.crop_btn_clima)
+
+        boton_balance.setOnClickListener {
+            val intent = Intent(this, BalanceActivity::class.java)
+            intent.putExtra("cultivo",cultivo)
+            startActivity(intent)
+        }
+
+        boton_clima.setOnClickListener {
+            val intent = Intent(this, WeatherActivity::class.java)
+            intent.putExtra("cultivo",cultivo)
+            startActivity(intent)
+        }
 
         boton_regresar.setOnClickListener {
             val intent = Intent(this, CropsViewActivity::class.java)
@@ -31,12 +44,6 @@ class CropActivity : AppCompatActivity() {
         }
 
         texto_cultivo.text = "Cultivo de $cultivo"
-
-        boton_informe.setOnClickListener {
-            val intent = Intent(this, ReportActivity::class.java)
-            intent.putExtra("cultivo",cultivo)
-            startActivity(intent)
-        }
 
         boton_horas_trabajadas.setOnClickListener {
             val intent = Intent(this, HoursWorkedActivity::class.java)

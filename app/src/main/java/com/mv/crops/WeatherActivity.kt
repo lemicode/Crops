@@ -10,6 +10,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Window
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.diego.test.openWeatherAPI.WeatherAPIConfig
@@ -63,6 +64,14 @@ class WeatherActivity : AppCompatActivity() {
         humedad = findViewById<TextView>(R.id.weather_txt_humedad)
         amanecer = findViewById<TextView>(R.id.weather_txt_amanecer)
         ocaso = findViewById<TextView>(R.id.weather_txt_ocaso)
+
+        val boton_regresar = findViewById<ImageView>(R.id.weather_btn_regresar)
+
+        boton_regresar.setOnClickListener {
+            val intent = Intent(this, CropActivity::class.java)
+            intent.putExtra("cultivo",cultivo)
+            startActivity(intent)
+        }
 
         val docRef = db.collection("crops/${auth.currentUser!!.email}/cultivos").document(cultivo!!)
         docRef.get()

@@ -1,9 +1,15 @@
 package com.mv.crops
 
+import android.content.ContentValues
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Window
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.components.AxisBase
 import com.github.mikephil.charting.components.Description
@@ -12,6 +18,10 @@ import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.IAxisValueFormatter
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.ktx.Firebase
 
 class BalanceActivity : AppCompatActivity() {
 
@@ -21,6 +31,8 @@ class BalanceActivity : AppCompatActivity() {
     private lateinit var barData: BarData
     private lateinit var barChartDescription: Description
     private lateinit var barChart: BarChart
+    private val db = FirebaseFirestore.getInstance()
+    private val auth: FirebaseAuth = Firebase.auth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,10 +42,34 @@ class BalanceActivity : AppCompatActivity() {
 
         var cultivo = getIntent().getExtras()!!.getString("cultivo")
 
+        val boton_regresar = findViewById<ImageView>(R.id.balance_btn_regresar)
+        val txt_total_tiempo = findViewById<TextView>(R.id.balance_txt_total_tiempo)
+
+        boton_regresar.setOnClickListener {
+            val intent = Intent(this, CropActivity::class.java)
+            intent.putExtra("cultivo", cultivo)
+            startActivity(intent)
+        }
+
+        try {
+            db.collection("crops/${auth.currentUser!!.email}/cultivos/${cultivo}/tiempos_trabajados")
+                .get()
+                .addOnSuccessListener { result ->
+                    Log.d(ContentValues.TAG, "DocumentSnapshot successfully written!")
+                    /*var total = 0.0
+                    for (document in result) {
+                        var minutos = document.data["minutos"] as Float
+                        total += minutos
+                    }
+                    txt_total_tiempo.text = "Total de Horas: ${total / 60}"*/
+                }
+                .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error al guardar en BD", e) }
+        } catch (e: Exception) {
+            Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
+        }
+
         barChart = findViewById<BarChart>(R.id.barChart)
-
         getBarChartData()
-
     }
 
     private fun getBarChartData() {

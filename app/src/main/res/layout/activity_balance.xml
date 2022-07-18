@@ -8,20 +8,23 @@
     tools:context=".BalanceActivity">
 
     <LinearLayout
-        android:layout_width="331dp"
-        android:layout_height="830dp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="100dp" />
+        <ImageView
+            android:id="@+id/balance_btn_regresar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            app:srcCompat="@drawable/ic_volver" />
 
         <TextView
-            android:id="@+id/hours_worked_text_title"
+            android:id="@+id/balance_text_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Balance Horas Trabajadas"
@@ -32,8 +35,22 @@
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/barChart"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="100dp" />
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/balance_txt_total_tiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="..."
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,39 +7,20 @@
     tools:context=".CropActivity">
 
     <LinearLayout
-        android:layout_width="351dp"
-        android:layout_height="827dp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="#FFFFFF" />
-
-        <LinearLayout
-            android:layout_width="389dp"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/crop_btn_regresar"
-                android:layout_width="66dp"
-                android:layout_height="25dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_volver" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF" />
-
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/crop_btn_regresar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start"
+            app:srcCompat="@drawable/ic_volver" />
 
         <TextView
             android:id="@+id/crop_txt_cultivo"
@@ -52,7 +33,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="25dp" />
 
         <TextView
             android:id="@+id/textView12"
@@ -71,7 +52,7 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Acá encontras todos los datos de tu cultivo."
+            android:text="Acá encontrarás todos los datos de tu cultivo."
             android:textColor="#000000"
             android:textSize="16sp" />
 
@@ -80,11 +61,11 @@
             android:layout_height="26dp" />
 
         <Button
-            android:id="@+id/crop_btn_reporte"
+            android:id="@+id/crop_btn_balance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_redondos"
-            android:text="Informe General"
+            android:text="Balance Horas Trabajadas"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
@@ -92,7 +73,23 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="15dp"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:id="@+id/crop_btn_clima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondos"
+            android:text="Clima de la region"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -132,7 +129,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="15dp" />
 
         <Button
             android:id="@+id/crop_btn_agua"
@@ -147,7 +144,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="15dp" />
 
         <Button
             android:id="@+id/crop_btn_hectareas"
