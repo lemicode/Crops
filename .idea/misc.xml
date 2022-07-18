@@ -27,14 +27,22 @@
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/inputs_redondos.xml" value="0.291" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/slector.xml" value="0.195" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/drawable/splashscreen.xml" value="0.2505" />
-        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_crops_view.xml" value="0.3009833262077811" />
-        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_home.xml" value="0.3837606837606838" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_balance.xml" value="0.1658828559213339" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_crop.xml" value="0.19" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_crops_view.xml" value="0.18" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_hectares_worked.xml" value="0.1658828559213339" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_home.xml" value="0.3316239316239316" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_hours_worked.xml" value="0.1658828559213339" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_irrigated_water.xml" value="0.1658828559213339" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_load.xml" value="0.20179563916203505" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_new_crop.xml" value="0.25" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_maps.xml" value="0.1658828559213339" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_new_crop.xml" value="0.2" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_new_user.xml" value="0.2751586582048957" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_report.xml" value="0.1658828559213339" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/activity_weather.xml" value="0.2" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/fragment_activities.xml" value="0.17272338606241983" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/layout/fragment_home.xml" value="0.17272338606241983" />
         <entry key="..\:/Users/alexc/3D Objects/Crops-final/app/src/main/res/menu/bottom_menu.xml" value="0.21932449764856776" />

@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_formularios"
     tools:context=".HoursWorkedActivity">
 
     <LinearLayout
-        android:layout_width="389dp"
-        android:layout_height="715dp"
+        android:layout_width="375dp"
+        android:layout_height="780dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,6 +25,7 @@
             android:textColor="#000000"
             android:textSize="34sp"
             android:textStyle="bold" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="31dp"
@@ -57,6 +59,7 @@
             android:paddingLeft="20dp"
             android:textColorHint="#191919"
             app:cardCornerRadius="10dp" />
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="22dp"
@@ -66,9 +69,10 @@
             android:id="@+id/hours_worked_btn_anadir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/botones_redondos_2"
+            android:background="@drawable/botones_redondos"
             android:text="Añadir"
             android:textAllCaps="false"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             app:cardCornerRadius="10dp" />
 
