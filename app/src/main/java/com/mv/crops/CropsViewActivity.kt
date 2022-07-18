@@ -179,16 +179,12 @@ class CropsViewActivity : AppCompatActivity() {
     }
 
     private fun addCrop() {
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
-        cropList.add(Crop("limon", "55", "22/07/2022", "Bogotá"))
+        cropList.add(Crop("limon"))
+        cropList.add(Crop("limon"))
+        cropList.add(Crop("limon"))
+        cropList.add(Crop("limon"))
+        cropList.add(Crop("limon"))
+        cropList.add(Crop("limon"))
     }
 
 }
