@@ -55,12 +55,6 @@ class CropsViewActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         pieChart = findViewById<PieChart>(R.id.pieChart)
-        var botonTemporal = findViewById<Button>(R.id.crops_view_crop_btn)
-
-        botonTemporal.setOnClickListener {
-            val intent = Intent(this, CropActivity::class.java)
-            startActivity(intent)
-        }
 
         getPieChartData()
 
@@ -125,7 +119,7 @@ class CropsViewActivity : AppCompatActivity() {
         pieChart.setEntryLabelColor(Color.BLUE)
         pieChart.setEntryLabelTextSize(5f)
 
-        pieDataSet = PieDataSet(pieValuesList, "Cultivos")
+        pieDataSet = PieDataSet(pieValuesList, "")
         pieDataSet.setDrawIcons(false)
         pieDataSet.setDrawValues(false)
 
@@ -172,7 +166,9 @@ class CropsViewActivity : AppCompatActivity() {
         cropAdapter.setOnItemClickListener(object: CropAdapter.onItemClickListener {
             override fun onItemClick(position: Int) {
                 Toast.makeText(this@CropsViewActivity, "Seleccionó ${cropList[position].nombre}", Toast.LENGTH_SHORT).show()
-
+                val intent = Intent(this@CropsViewActivity, CropActivity::class.java)
+                intent.putExtra("cultivo", cropList[position].nombre)
+                startActivity(intent)
             }
         })
     }

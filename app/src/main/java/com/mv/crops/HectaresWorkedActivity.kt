@@ -11,6 +11,8 @@ class HectaresWorkedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hectares_worked)
 
+        var cultivo = getIntent().getExtras()!!.getString("cultivo")
+
         val txt_hectareas_trabajadas = findViewById<EditText>(R.id.hectares_worked_txt_amount)
         val boton_anadir = findViewById<Button>(R.id.hectares_worked_btn_anadir)
 
