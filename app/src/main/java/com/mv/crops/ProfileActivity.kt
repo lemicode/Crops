@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Window
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -23,6 +24,14 @@ class ProfileActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         val boton_cerrar_sesion = findViewById<Button>(R.id.profile_btn_cerrar_sesion)
+        var email_perfil = findViewById<TextView>(R.id.profile_txt_email)
+
+        if(auth.currentUser != null){
+            email_perfil.text = auth.currentUser!!.email
+        }
+        else {
+            email_perfil.text = ""
+        }
 
         boton_cerrar_sesion.setOnClickListener {
             auth.signOut()

@@ -15,17 +15,15 @@ class ReportActivity : AppCompatActivity() {
         setContentView(R.layout.activity_report)
 
         var boton_balance = findViewById<Button>(R.id.report_btn_balance)
-        var boton_mapa = findViewById<Button>(R.id.report_btn_mapa)
+        var boton_clima = findViewById<Button>(R.id.report_btn_clima)
 
         boton_balance.setOnClickListener {
             val intent = Intent(this, BalanceActivity::class.java)
             startActivity(intent)
         }
 
-        boton_mapa.setOnClickListener {
-            val intent = Intent(this, MapsActivity::class.java)
-            intent.putExtra("latitude",4.72977)
-            intent.putExtra("longitude",-73.96835)
+        boton_clima.setOnClickListener {
+            val intent = Intent(this, WeatherActivity::class.java)
             startActivity(intent)
         }
 

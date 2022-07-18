@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    tools:context=".WeatherActivity">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="862dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:text="Clima de la región"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estas son las condiciones climaticas de tu ubicación"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mapa del clima"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <Button
+            android:id="@+id/weather_btn_mapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botones_redondos"
+            android:text="Mapa"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:cardCornerRadius="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datos del clima"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_Temperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/temperatura"
+                tools:srcCompat="@drawable/temperatura" />
+
+            <ImageView
+                android:id="@+id/imageView_Viento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/viento"
+                tools:srcCompat="@drawable/viento" />
+
+            <ImageView
+                android:id="@+id/imageView_Lluvia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/lluvia"
+                tools:srcCompat="@drawable/lluvia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weather_txt_temp"
+                android:layout_width="109dp"
+                android:layout_height="48dp"
+                android:text="TextView"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/weather_txt_viento"
+                android:layout_width="150dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/weather_txt_lluvia"
+                android:layout_width="150dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="43dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/humedad"
+                tools:srcCompat="@drawable/humedad" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/sol_salida"
+                tools:srcCompat="@drawable/sol_salida" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/sol_bajada"
+                tools:srcCompat="@drawable/sol_bajada" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weather_txt_humedad"
+                android:layout_width="112dp"
+                android:layout_height="45dp"
+                android:text="TextView"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/weather_txt_amanecer"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/weather_txt_ocaso"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

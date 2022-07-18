@@ -4,12 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EFEFEF"
     tools:context=".ReportActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="326dp"
+        android:layout_height="799dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/report_btn_balance"
@@ -22,12 +28,17 @@
             android:textSize="18sp"
             app:cardCornerRadius="10dp" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="#FFFFFF" />
+
         <Button
-            android:id="@+id/report_btn_mapa"
+            android:id="@+id/report_btn_clima"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botones_redondos"
-            android:text="Mapa"
+            android:text="Clima de la region"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="18sp"

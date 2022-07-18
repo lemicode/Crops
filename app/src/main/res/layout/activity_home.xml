@@ -8,8 +8,9 @@
     tools:context=".HomeActivity">
 
     <LinearLayout
-        android:layout_width="352dp"
-        android:layout_height="834dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="359dp"
+        android:layout_height="761dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,9 +96,9 @@
                         android:layout_marginTop="21dp"
                         android:layout_marginEnd="112dp"
                         android:layout_marginBottom="75dp"
+                        android:src="@drawable/ic_icono_card_ver_cultivo"
                         android:translationX="-5dp"
                         android:translationY="10dp"
-                        android:src="@drawable/ic_icono_card_ver_cultivo"
                         tools:srcCompat="@drawable/ic_icono_card_ver_cultivo" />
 
                     <TextView
@@ -147,8 +148,8 @@
                     android:layout_width="170dp"
                     android:layout_height="169dp"
                     android:layout_margin="0dp"
-                    android:src="@drawable/agregar_cultivos_imagen"
-                    android:background="@drawable/agregar_cultivos_imagen">
+                    android:background="@drawable/agregar_cultivos_imagen"
+                    android:src="@drawable/agregar_cultivos_imagen">
 
                     <!--Add cardview contents-->
 
@@ -166,9 +167,9 @@
                         android:layout_marginTop="21dp"
                         android:layout_marginEnd="112dp"
                         android:layout_marginBottom="75dp"
+                        android:src="@drawable/ic_icono_card_agregar_cultivo"
                         android:translationX="-5dp"
                         android:translationY="10dp"
-                        android:src="@drawable/ic_icono_card_agregar_cultivo"
                         tools:srcCompat="@drawable/ic_icono_card_agregar_cultivo" />
 
                     <TextView
@@ -242,9 +243,9 @@
                         android:layout_marginTop="21dp"
                         android:layout_marginEnd="112dp"
                         android:layout_marginBottom="92dp"
+                        android:src="@drawable/ic_icono_card_actividades"
                         android:translationX="-5dp"
                         android:translationY="40dp"
-                        android:src="@drawable/ic_icono_card_actividades"
                         tools:srcCompat="@drawable/ic_icono_card_actividades" />
 
                     <TextView
@@ -311,9 +312,9 @@
                         android:layout_marginTop="21dp"
                         android:layout_marginEnd="116dp"
                         android:layout_marginBottom="102dp"
+                        android:src="@drawable/ic_icono_card_perfil"
                         android:translationX="-5dp"
                         android:translationY="40dp"
-                        android:src="@drawable/ic_icono_card_perfil"
                         tools:srcCompat="@drawable/ic_icono_card_perfil" />
 
                     <TextView
@@ -376,7 +377,7 @@
             <RelativeLayout
                 android:id="@+id/list_container_bg5"
                 android:layout_width="match_parent"
-                android:layout_height="169dp"
+                android:layout_height="170dp"
                 android:layout_margin="0dp"
                 android:background="@drawable/tipss_imagen_12">
 
@@ -396,9 +397,9 @@
                     android:layout_marginTop="21dp"
                     android:layout_marginEnd="112dp"
                     android:layout_marginBottom="102dp"
+                    android:src="@drawable/ic_icono_card_tips"
                     android:translationX="90dp"
                     android:translationY="-10dp"
-                    android:src="@drawable/ic_icono_card_tips"
                     tools:srcCompat="@drawable/ic_icono_card_tips" />
 
                 <TextView
@@ -429,4 +430,45 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@+id/bottomAppBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:backgroundTint="#FFFFFF"-->
+
+<!--        app:fabCradleRoundedCornerRadius="0dp"-->
+
+<!--        />-->
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            app:itemIconTint="@drawable/slector"-->
+<!--            app:itemTextColor="@drawable/slector"-->
+<!--            app:menu="@menu/bottom_menu"-->
+<!--            app:layout_anchor="@id/bottomAppBar"-->
+<!--            android:background="@android:color/transparent"/>-->
+
+
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/button_crops_menu"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:elevation="7dp"-->
+<!--        app:layout_anchor="@id/bottomAppBar"-->
+<!--        app:layout_anchorGravity="bottom|right|end"-->
+<!--        android:src="@drawable/ic_icono_cultivo_menu"-->
+<!--        app:fabSize="normal"-->
+<!--        tools:ignore="SpeakableTextPresentCheck"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="-2dp" />-->
+
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

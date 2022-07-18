@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crops">
         <activity
-            android:name=".TipsActivity"
+            android:name=".WeatherActivity"
             android:exported="false" />
         <activity
             android:name=".ReportActivity"
@@ -56,6 +56,12 @@
             android:exported="false" />
         <activity
             android:name=".HoursWorkedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IrrigatedWaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HectaresWorkedActivity"
             android:exported="false" />
         <activity
             android:name=".NewCropActivity"
