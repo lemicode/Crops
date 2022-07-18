@@ -176,5 +176,4 @@ A continuación se muestra la aplicación en funcionamiento a modo de hilo recor
 
 ### Conclusiones 
 
-
-
+Durante el desarrollo de esta aplicación afianzamos los conocimientos aprendidos en clase y fortalecimos nuestras habilidades de trabajo colaborativo gracias a las tecnologías.
