@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:title=""
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/Actividades"
+        android:title="Actividades"
+        android:icon="@drawable/ic_actividades"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/Tips"
+        android:title=""
+        android:icon="@drawable/ic_tips"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/Perfil"
+        android:title=""
+        android:icon="@drawable/ic_perfil"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>
