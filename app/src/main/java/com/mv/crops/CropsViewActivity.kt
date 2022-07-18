@@ -78,7 +78,7 @@ class CropsViewActivity : AppCompatActivity() {
                 for (document in result) {
                     Log.d(TAG, "${document.id} => ${document.data}")
                     cropList.add(Crop(document.id))
-                    pieValuesList.add(PieEntry(document.data["area"].toString().toFloat(), "${document.data["area"].toString()}ha   ${document.id}"))
+                    pieValuesList.add(PieEntry(document.data["area"].toString().toFloat(), "${document.data["area"].toString()}ha ${document.id}"))
                 }
                 initRecyclerView()
                 drawPieChart()
