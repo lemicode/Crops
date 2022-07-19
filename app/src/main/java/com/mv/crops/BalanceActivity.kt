@@ -58,9 +58,6 @@ class BalanceActivity : AppCompatActivity() {
 
         try {
 
-            barValuesList = ArrayList()
-            barLabelsList = ArrayList<String>()
-
             db.collection("crops/${auth.currentUser!!.email}/cultivos/${cultivo}/tiempos_trabajados")
                 .orderBy("fecha", Query.Direction.DESCENDING)
                 .limit(7)
@@ -72,8 +69,6 @@ class BalanceActivity : AppCompatActivity() {
                     val numberFormat = DecimalFormat("#,###.##")
                     for (document in result) {
                         Log.d(ContentValues.TAG, document.data.toString())
-                        barValuesList.add(BarEntry(i, document.data["minutos"].toString().toFloat(), document.data["fecha"].toString()))
-                        barLabelsList.add(document.data["fecha"].toString())
                         i += 1
                         total += document.data["minutos"].toString().toDouble()
                     }
@@ -136,6 +131,23 @@ class BalanceActivity : AppCompatActivity() {
 //        ===============================================================
     private fun drawBarChart() {
 
+        barValuesList = ArrayList()
+        barLabelsList = ArrayList<String>()
+        barValuesList.add(BarEntry(1f, 125f, "Lunes"))
+        barLabelsList.add("Lunes")
+        barValuesList.add(BarEntry(2f, 15f, "Martes"))
+        barLabelsList.add("Martes")
+        barValuesList.add(BarEntry(3f, 250f, "Miercoles"))
+        barLabelsList.add("Miercoles")
+        barValuesList.add(BarEntry(4f, 135f, "Jueves"))
+        barLabelsList.add("Jueves")
+        barValuesList.add(BarEntry(5f, 57f, "Viernes"))
+        barLabelsList.add("Viernes")
+        barValuesList.add(BarEntry(6f, 89f, "Sabado"))
+        barLabelsList.add("Sabado")
+        barValuesList.add(BarEntry(7f, 35f, "Domingo"))
+        barLabelsList.add("Domingo")
+
         barChart = findViewById<BarChart>(R.id.barChart)
 
         barChartDescription = Description()
@@ -178,7 +190,7 @@ class BalanceActivity : AppCompatActivity() {
         }
 
         override fun getFormattedValue(value: Float, axis: AxisBase?): String {
-            return mValues[value.toInt()]
+            return mValues[value.toInt() - 1]
         }
 
     }
