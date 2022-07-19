@@ -47,6 +47,8 @@ class BalanceActivity : AppCompatActivity() {
 
         val boton_regresar = findViewById<ImageView>(R.id.balance_btn_regresar)
         val txt_total_tiempo = findViewById<TextView>(R.id.balance_txt_total_tiempo)
+        val txt_total_agua = findViewById<TextView>(R.id.balance_txt_total_agua)
+        val txt_total_hectareas = findViewById<TextView>(R.id.balance_txt_total_hectareas)
 
         boton_regresar.setOnClickListener {
             val intent = Intent(this, CropActivity::class.java)
@@ -75,10 +77,54 @@ class BalanceActivity : AppCompatActivity() {
                         i += 1
                         total += document.data["minutos"].toString().toDouble()
                     }
-                    txt_total_tiempo.text = "Total de Horas: ${numberFormat.format(total / 60)}"
+                    if (total != null) {
+                        txt_total_tiempo.text = "Total Horas Trabajadas: ${numberFormat.format(total / 60)}"
+                    }
+
                     drawBarChart()
                 }
-                .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error al guardar en BD", e) }
+                .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error consultando BD", e) }
+
+            db.collection("crops/${auth.currentUser!!.email}/cultivos/${cultivo}/agua_regada")
+                .orderBy("fecha", Query.Direction.DESCENDING)
+                .limit(7)
+                .get()
+                .addOnSuccessListener { result ->
+
+                    var total = 0.0
+                    var i : Float = 1f
+                    val numberFormat = DecimalFormat("#,###.##")
+                    for (document in result) {
+                        Log.d(ContentValues.TAG, document.data.toString())
+                        total += document.data["cantidad"].toString().toDouble()
+                    }
+                    if (total != null) {
+                        txt_total_agua.text = "Total Agua Regada: ${numberFormat.format(total / 60)}"
+                    }
+
+                }
+                .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error consultando BD", e) }
+
+            db.collection("crops/${auth.currentUser!!.email}/cultivos/${cultivo}/hectareas_trabajadas")
+                .orderBy("fecha", Query.Direction.DESCENDING)
+                .limit(7)
+                .get()
+                .addOnSuccessListener { result ->
+
+                    var total = 0.0
+                    var i : Float = 1f
+                    val numberFormat = DecimalFormat("#,###.##")
+                    for (document in result) {
+                        Log.d(ContentValues.TAG, document.data.toString())
+                        total += document.data["cantidad"].toString().toDouble()
+                    }
+                    if (total != null) {
+                        txt_total_hectareas.text = "Total Hectareas Trabajadas: ${numberFormat.format(total / 60)}"
+                    }
+
+                }
+                .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error consultando BD", e) }
+
         } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
