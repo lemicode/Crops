@@ -33,7 +33,7 @@ La agricultura tiene una gran importancia en la economía de muchos países en d
 
 Antes de la pandemia, la agricultura como sector productivo no generaba el interés que concita en la actualidad como proveedor estratégico de alimentos, pilar de la seguridad alimentaria y bastión en la lucha contra la inflación. Estudios recientes comprueban que la contribución del valor agregado de la agricultura a la economía es muy superior en América Latina, incluida Colombia. Un estudio de la FAO (Organización de las Naciones Unidas para la Agricultura y la Alimentación) sobre Transformación Rural de Carolina Trivelli y Julio Berdegué, menciona que el aporte agropecuario ampliado a la economía podría ser del 30% en el país, al igual que, en promedio, en 9 países evaluados de la región. Los autores sostienen que el peso total de la agricultura ampliada representan un multiplicador de la economía agrícola, que podría elevar, en promedio, hasta por cuatro el impacto del valor real de la agricultura
 
-Dicho esto, se decidió  que ayudar al agriculto colombiano a hacer parte de un mundo cada vez más globalizado e industrializado por medio de la implementación de una aplicación móvil que le permita tener un mayor control sobre sus cultivos garantizando una mejor calidad y eficiencia en cada uno de estos.
+Dicho esto, se decidió  ayudar al agricultor colombiano a hacer parte de un mundo cada vez más globalizado e industrializado por medio de la implementación de una aplicación móvil que le permita tener un mayor control sobre sus cultivos garantizando una mejor calidad y eficiencia en cada uno de estos.
 
 # Herramientas usadas para la solución
 <h2>Kotlin</h2>
