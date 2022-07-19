@@ -177,3 +177,5 @@ A continuación se muestra la aplicación en funcionamiento a modo de hilo recor
 ### Conclusiones 
 
 Durante el desarrollo de esta aplicación afianzamos los conocimientos aprendidos en clase y fortalecimos nuestras habilidades de trabajo colaborativo gracias a las tecnologías.
+
+Se logra poner el conocimiento al servicio de una problemática identificada en la sociedad e implementar un plan de acción donde se pasa por un periodo de investigación, ideación e implementación logrando aportar desde el campo de la tecnología a una solución sostenible.
