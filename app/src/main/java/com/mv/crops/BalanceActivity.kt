@@ -58,6 +58,9 @@ class BalanceActivity : AppCompatActivity() {
 
         try {
 
+            barValuesList = ArrayList()
+            barLabelsList = ArrayList<String>()
+
             db.collection("crops/${auth.currentUser!!.email}/cultivos/${cultivo}/tiempos_trabajados")
                 .orderBy("fecha", Query.Direction.DESCENDING)
                 .limit(7)
@@ -65,11 +68,13 @@ class BalanceActivity : AppCompatActivity() {
                 .addOnSuccessListener { result ->
 
                     var total = 0.0
-                    var i : Float = 1f
+                    var i = 0
                     val numberFormat = DecimalFormat("#,###.##")
                     for (document in result) {
                         Log.d(ContentValues.TAG, document.data.toString())
-                        i += 1
+                        barValuesList.add(BarEntry(i.toFloat(), document.data["minutos"].toString().toFloat(), document.data["fecha"].toString()))
+                        barLabelsList.add(document.data["fecha"].toString())
+                        i++
                         total += document.data["minutos"].toString().toDouble()
                     }
                     if (total != null) {
@@ -85,9 +90,7 @@ class BalanceActivity : AppCompatActivity() {
                 .limit(7)
                 .get()
                 .addOnSuccessListener { result ->
-
                     var total = 0.0
-                    var i : Float = 1f
                     val numberFormat = DecimalFormat("#,###.##")
                     for (document in result) {
                         Log.d(ContentValues.TAG, document.data.toString())
@@ -96,7 +99,6 @@ class BalanceActivity : AppCompatActivity() {
                     if (total != null) {
                         txt_total_agua.text = "Total Agua Regada: ${numberFormat.format(total / 60)}"
                     }
-
                 }
                 .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error consultando BD", e) }
 
@@ -105,18 +107,15 @@ class BalanceActivity : AppCompatActivity() {
                 .limit(7)
                 .get()
                 .addOnSuccessListener { result ->
-
                     var total = 0.0
-                    var i : Float = 1f
                     val numberFormat = DecimalFormat("#,###.##")
                     for (document in result) {
                         Log.d(ContentValues.TAG, document.data.toString())
                         total += document.data["cantidad"].toString().toDouble()
                     }
                     if (total != null) {
-                        txt_total_hectareas.text = "Total Hectareas Trabajadas: ${numberFormat.format(total / 60)}"
+                        txt_total_hectareas.text = "Total Hectareas Trabajadas: ${numberFormat.format(total)}"
                     }
-
                 }
                 .addOnFailureListener { e -> Log.w(ContentValues.TAG, "Error consultando BD", e) }
 
@@ -126,27 +125,10 @@ class BalanceActivity : AppCompatActivity() {
 
     }
 
-//        ===============================================================
+    //        ===============================================================
 //        Bar Chart
 //        ===============================================================
     private fun drawBarChart() {
-
-        barValuesList = ArrayList()
-        barLabelsList = ArrayList<String>()
-        barValuesList.add(BarEntry(1f, 125f, "Lunes"))
-        barLabelsList.add("Lunes")
-        barValuesList.add(BarEntry(2f, 15f, "Martes"))
-        barLabelsList.add("Martes")
-        barValuesList.add(BarEntry(3f, 250f, "Miercoles"))
-        barLabelsList.add("Miercoles")
-        barValuesList.add(BarEntry(4f, 135f, "Jueves"))
-        barLabelsList.add("Jueves")
-        barValuesList.add(BarEntry(5f, 57f, "Viernes"))
-        barLabelsList.add("Viernes")
-        barValuesList.add(BarEntry(6f, 89f, "Sabado"))
-        barLabelsList.add("Sabado")
-        barValuesList.add(BarEntry(7f, 35f, "Domingo"))
-        barLabelsList.add("Domingo")
 
         barChart = findViewById<BarChart>(R.id.barChart)
 
@@ -190,7 +172,7 @@ class BalanceActivity : AppCompatActivity() {
         }
 
         override fun getFormattedValue(value: Float, axis: AxisBase?): String {
-            return mValues[value.toInt() - 1]
+            return mValues[value.toInt()]
         }
 
     }

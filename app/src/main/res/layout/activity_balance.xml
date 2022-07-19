@@ -40,7 +40,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/balance_txt_total_tiempo"
@@ -54,7 +54,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/balance_txt_total_agua"
@@ -68,7 +68,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="25dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/balance_txt_total_hectareas"
